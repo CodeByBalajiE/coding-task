@@ -8,21 +8,23 @@ public class infinteloops {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a loop name to check infinity nature in lower case");
         String a = input.nextLine();
-        if(a=="while")//while infine natue
+        if(a.equals("while"))//while infine natue
         {
             while (true)
             {
                 System.out.println("infinite while loop");
             }
         }
-        else
+        else if(a.equals("for"))
         {
             for (;;)//for infinite nature
             {
                 System.out.println("infinite for loop");
             }
         }
+        else{
+            System.out.println("invalid");
+        }
     }
 }
-
 
